@@ -1,0 +1,44 @@
+class Instructor:
+    def __init__(self, first_name, last_name, department, status):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.department = department
+        self.status = status
+        status = ""
+    def instructor_view(self):
+        return(self.first_name, self.last_name, self.department, self.status)
+    def login(self):
+        if self.status == "permanent":
+            return("Welcome" + " " + self.first_name)
+        else: 
+            return("Sorry, you do not have access")
+
+i1 = Instructor("John", "Smith", "IT", "permanent")
+i2 = Instructor("Sarah", "Lowe", "IT", "subsitute")
+print(i2.login())
+
+class Courses:
+    def __init__(self, name, credit, instructor_lastname):
+        self.name = name
+        self.credit = int(credit)
+        self.instructor = instructor_lastname
+    def view_course(self):
+        return(self.name, self.credit,self.instructor)
+        
+c1 = Courses("ITC172", 5, "Smith")  
+print(c1.view_course())
+
+class Person:
+    def __init__(self, first_name, last_name, email, phone, address):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.department = department
+        self.status = status
+        status = ""
+    def instructor_view(self):
+        return(self.first_name, self.last_name, self.department, self.status)
+    def login(self):
+        if self.status == "permanent":
+            return("Welcome" + " " + self.first_name)
+        else: 
+            return("Sorry, you do not have access")
